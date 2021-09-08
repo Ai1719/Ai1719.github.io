@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+       <h3>Registration Form</h3>
+        <form action="register.php"  method="GET" enctype="multipart/form-data">
+            <input type="text" name="voucher-id" id="voucher-id" value="error" disabled="disabled">
+            <input type="hidden" name="id" value="45" size="20">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" minlength="5" maxlength="15"><br>
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="25" rows="3"></textarea><br>
+   
+            </fieldset>
+             <label for="">Interests</label><br>
+             <label for="html">HTML</label>
+             <input type="checkbox" name="html" id="html" value="html">
+             
+                
+                <label for="css">CSS</label>
+                <input type="checkbox" name="css" id="css" value="css">
+
+                <label for="js">JavaScript</label>
+                <input type="checkbox" name="js" id="js" value="js" checked="check"><br>
+                
+                <label for="">male</label>
+                <input type="radio" name="gender" id="male" value="male">
+
+                <label for="">female</label>
+                <input type="radio" name="gender" id="female" value="female">
+
+                <label for="">other</label>
+                <input type="radio" name="gender" id="other" value="other"><br>
+                 
+                <label for="city">City</label>
+                <select name="city" id="city" multiple="multiple">
+                        <option value="1">Yangon</option>
+                        <option value="2">Mandalay</optipn>
+                        <option value="3">NayPyiDaw</option>
+                        <option value="4" selected="selected">Bagan</option>
+                </select><br>
+
+                <label for="photo">photo</label>
+                <input type="file" id="photo" value="photo"><br>
+
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" step="2" min="12" max="34"><br>
+
+                <label for="height">Height</label>
+                <input type="number" name="height" id="height" step="0.01"><br>
+
+                <label for="range">Salary range</label>
+               0 <input type="range" name="range" id="range">100<br>
+
+               <label for="dob">Date of brith</label>
+               <input type="date" name="dob" id="dob"><br><br>
+                
+                <input type="submit" value=" register">
+                <input type="reset" value="Clear">
+                <input type="button" value="click"><br><br>
+        </form>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/Z7vCR68VVhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
